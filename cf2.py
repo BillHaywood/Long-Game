@@ -1,16 +1,23 @@
-#!python2
 import Tkinter as tkinter #basically renamed Tkinter to tkinter so rest of code would work
 menu = 0
 def adv1():
-	global menu
-	menu = 1
-	print(menu)
-	return menu
+	frame2 = tkinter.Frame(main)
+	frame2.pack()
+	button0 = tkinter.Button(frame2, text="Continue", width=25, command=frame2.destroy)
+	button0.pack(side = 'bottom')
+	button1 = tkinter.Button(frame2, text='Three', width=25, command=adv3)
+	button1.pack(side = 'left')
+	button2 = tkinter.Button(frame2, text='Four', width=25, command=adv4)
+	button2.pack(side = 'left')
 def adv2():
-	global menu
-	menu = 2
-	print(menu)
-	return menu
+	frame3 = tkinter.Frame(main)
+	frame3.pack()
+	button0 = tkinter.Button(frame3, text="Continue", width=25, command=frame3.destroy)
+	button0.pack(side = 'bottom')
+	button1 = tkinter.Button(frame3, text='Five', width=25, command=adv5)
+	button1.pack(side = 'left')
+	button2 = tkinter.Button(frame3, text='Six', width=25, command=adv6)
+	button2.pack(side = 'left')
 def adv3():
 	global menu
 	menu = 3
@@ -107,25 +114,5 @@ while menu == 0:
 	button1.pack(side = 'left')
 	button2 = tkinter.Button(frame, text='Two', width=25, command=adv2)
 	button2.pack(side = 'right')
-	break
-while menu == 1:
-	frame2 = tkinter.Frame(main)
-	frame2.pack()
-	button0 = tkinter.Button(frame2, text="Continue", width=25, command=frame2.destroy)
-	button0.pack(side = 'bottom')
-	button1 = tkinter.Button(frame2, text='Three', width=25, command=adv3)
-	button1.pack(side = 'left')
-	button2 = tkinter.Button(frame2, text='Four', width=25, command=adv4)
-	button2.pack(side = 'left')
-	break
-while menu == 2:
-	frame3 = tkinter.Frame(main)
-	frame3.pack()
-	button0 = tkinter.Button(frame3, text="Continue", width=25, command=frame3.destroy)
-	button0.pack(side = 'bottom')
-	button1 = tkinter.Button(frame3, text='Five', width=25, command=adv5)
-	button1.pack(side = 'left')
-	button2 = tkinter.Button(frame3, text='Six', width=25, command=adv6)
-	button2.pack(side = 'left')
 	break
 main.mainloop()
