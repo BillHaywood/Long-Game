@@ -1,6 +1,7 @@
 import Tkinter as tkinter #basically renamed Tkinter to tkinter so rest of code would work
 menu = 0
 def adv1():
+	frame.destroy()
 	frame2 = tkinter.Frame(main)
 	frame2.pack()
 	button0 = tkinter.Button(frame2, text="Continue", width=25, command=frame2.destroy)
@@ -10,6 +11,7 @@ def adv1():
 	button2 = tkinter.Button(frame2, text='Four', width=25, command=adv4)
 	button2.pack(side = 'left')
 def adv2():
+	frame.destroy()
 	frame3 = tkinter.Frame(main)
 	frame3.pack()
 	button0 = tkinter.Button(frame3, text="Continue", width=25, command=frame3.destroy)
