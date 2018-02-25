@@ -1,3 +1,4 @@
+#!python2
 import Tkinter as tkinter #capital T
 menu = 0
 def adv(inp):

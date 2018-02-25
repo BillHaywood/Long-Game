@@ -1,3 +1,4 @@
+#!python2
 import Tkinter as tkinter #basically renamed Tkinter to tkinter so rest of code would work
 menu = 0
 def adv1():
