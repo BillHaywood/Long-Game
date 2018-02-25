@@ -1,4 +1,4 @@
-import tkinter
+import Tkinter as tkinter #capital T
 menu = 0
 def adv(inp):
 	global menu
@@ -8,6 +8,7 @@ def adv(inp):
 main = tkinter.Tk()
 main.title("Menu")
 while menu == 0:
+	print "heyre"
 	frame = tkinter.Frame(main)
 	frame.pack()
 	text = tkinter.Label(frame, text="""This is some text.
